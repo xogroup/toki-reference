@@ -1,0 +1,36 @@
+{
+    "toki": {
+        "routes": [
+            {
+                "path"       : "/test",
+                "httpAction" : "GET",
+                "tags"       : ["api"],
+                "description": "Example endpoint",
+                "actions"    : [
+                    {
+                        "name": "test action 1",
+                        "type": "toki-method-http",
+                        "inputConfiguration": {
+                            "url": "http://example.com",
+                            "method": "get"
+                        },
+                        "clientResponseConfiguration": true
+                    }
+                ]
+            },
+            {
+                "path"       : "/proxy",
+                "httpAction" : "GET",
+                "tags"       : ["api"],
+                "description": "Example endpoint",
+                "actions"    : [
+                    {
+                        "name": "proxy action 1",
+                        "type": "toki-method-proxy",
+                        "destination": "http://www.example.com"
+                    }
+                ]
+            }
+        ]
+    }
+}

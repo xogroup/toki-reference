@@ -1,0 +1,20 @@
+{
+  "name": "toki-reference",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^16.1.1",
+    "toki": "^0.8.0",
+    "toki-hapi-bridge": "^0.3.0",
+    "toki-method-http": "^0.2.4",
+    "toki-method-proxy": "^0.1.0",
+    "winston": "^2.3.1"
+  }
+}
